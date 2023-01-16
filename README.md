@@ -43,7 +43,7 @@ Here is a simple demonstration of using Terraform to build an AWS infra to launc
 |  wp_domain | your FQDN  |
 | public_ips  | IPs that can SSH to the bastion server  |
 |  public_ssh_to_frontend | condition check; if  this is set to true, ssh access to the frontend webserver will be open to all |
-| public_ssh_to_backend  | condition check; if  this is set to true, ssh access to the backend databse server will be open to all |
+| public_ssh_to_backend  | condition check; if  this is set to true, ssh access to the backend database server will be open to all |
 |  frontend_ports |  http and https ports for the frontend server |
 | backend_port  | mysql port for the database server  | 
 | bastion_port  | ssh port for bastion server  |
