@@ -32,10 +32,10 @@ Here is a simple demonstration of using Terraform to build an AWS infra to launc
 | secret_key  | your secret key |
 | project  | your project name  |
 | environment  | your project environment |
-| instance_ami  | preffered Amazon Machine Image |
-| instance_type  | preffered aws instance type |
+| instance_ami  | preferred Amazon Machine Image |
+| instance_type  | preferred aws instance type |
 | vpc_cidr  | CIDR block for the VPC |
-| db_name  | preffered database name |
+| db_name  | preferred database name |
 | db_username  | database username for the wordpress website |
 | db_password  | password for the database user |
 | mysqlrootpwd  | mysql root user password |
@@ -44,8 +44,8 @@ Here is a simple demonstration of using Terraform to build an AWS infra to launc
 | public_ips  | IPs that can SSH to the bastion server  |
 |  public_ssh_to_frontend | condition check; if  this is set to true, ssh access to the frontend webserver will be open to all |
 | public_ssh_to_backend  | condition check; if  this is set to true, ssh access to the backend databse server will be open to all |
-|  frontend_ports |  http and https ports for frontend server |
-| backend_port  | mysql port for database server  | 
+|  frontend_ports |  http and https ports for the frontend server |
+| backend_port  | mysql port for the database server  | 
 | bastion_port  | ssh port for bastion server  |
 
 To download project files to your local system, you need to execute
