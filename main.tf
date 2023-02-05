@@ -2,7 +2,7 @@
 # Defining terraform module to create a VPC
 #===========================================================================================================
 module "vpc" {
-  source      = "/vpc-module/"
+  source      = "github.com/sreenidhiramachandran/terraform_vpc_module"
   project     = var.project
   environment = var.environment
   vpc_cidr    = var.vpc_cidr
@@ -33,7 +33,7 @@ resource "aws_ec2_managed_prefix_list" "new_prefix_list" {
 resource "aws_security_group" "sg-bastion" {
   vpc_id      = module.vpc.vpc_id
   name        = "${var.project}-${var.environment}-bastion"
-  description = "Allow SSH traffic to frontend and backend servers"
+  description = "Allow SSH traffic from the IPs in prefix list"
   ingress {
     from_port       = var.bastion_port
     to_port         = var.bastion_port
