@@ -58,8 +58,7 @@ Here is a simple demonstration of using Terraform to build an AWS infra to launc
 
 To download project files to your local system, you need to execute
 ```sh
-git clone https://github.com/sreenidhiramachandran/terraform_vpc_module_automated_wp_deployment.git
-
+git clone https://github.com/sreenidhiramachandran/terraform_multi_tier_wordpress_deployment.git
 ```
 
 To run this terraform code; you need to execute
