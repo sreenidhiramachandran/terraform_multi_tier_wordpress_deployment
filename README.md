@@ -32,6 +32,7 @@ Here is a simple demonstration of using Terraform to build an AWS infra to launc
 - IAM user with programmatic access and permission to create the required resources.
 - Knowledge of the working principles of AWS services like VPC, EC2, and Route53.
 
+## Variables Used
 
 | Variable | Description |
 | ------ | ------ |
