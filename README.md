@@ -3,12 +3,15 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 ## Description
+Terraform is an open-source infrastructure as code (IaC) tool that allows us to define and manage cloud infrastructure resources using a high-level configuration language. It provides a simple, declarative syntax for defining infrastructure resources, such as virtual machines, storage buckets, network interfaces, and load balancers, across multiple cloud providers, including Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).
 
-Terraform is an open-source infrastructure-as-code(IAC) software for building, changing, and versioning infrastructure safely and efficiently.
+We can define the infrastructure in a single file or in a modular fashion, using reusable components called modules.Here I am using a VPC module in the project.
 
+Terraform is designed to be cloud-agnostic, meaning that you can use the same configuration language to define infrastructure resources across different cloud providers. It also supports a wide range of cloud resources and services, including compute, networking, storage, databases, and security.
 
-Here is a simple demonstration of using Terraform to build an AWS infra to launch a wordpress website.
+Terraform works by creating an execution plan based on the configuration, which describes the changes that will be made to the infrastructure. It then applies the changes in a safe and predictable manner, ensuring that the infrastructure is always in the desired state.
 
+This is a brief demonstration on how to use Terraform to construct an AWS infrastructure that will enable the deployment of a WordPress website.
 
 
 <a href="https://ibb.co/zQj6T28"><img src="https://i.ibb.co/34GR9Ff/aanew-drawio.png" alt="aanew-drawio" border="0"></a>
@@ -69,3 +72,7 @@ $ terraform init
 $ terraform plan
 $ terraform apply
 ```
+
+## Conclusion
+
+This guide will walk you through the steps to create a Virtual Private Cloud (VPC) in AWS using the terraform. We will create a VPC with public and  private subnets, a NAT Gateway, an Internet Gateway, and two Route Tables. We will launch a bastion instance on the first public subnet, a frontend webserver on the second public subnet, and a database server on the private subnet.
